@@ -242,7 +242,7 @@ static int handle_comment_data(merlin_node *node, void *buf)
 	}
 
 	if (ds->type == NEBTYPE_COMMENT_DELETE) {
-		comment *cmnt, *next_cmnt;
+		nagios_comment *cmnt, *next_cmnt;
 
 		if (ds->comment_type == HOST_COMMENT) {
 			cmnt = get_first_comment_by_host(ds->host_name);
