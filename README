@@ -1,3 +1,11 @@
+Forked from ageric/merlin
+
+For use with Nagios 4.4.3 (yum repository) on Centos 7.
+
+
+## Original README file goes below
+
+
 Requirements
 ------------
 Merlin requires Nagios 4, and needs the libnagios-devel package

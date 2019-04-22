@@ -4,7 +4,7 @@
 #include <nagios/comments.h>
 #include <nagios/downtime.h>
 char *config_file = "/opt/monitor/etc/nagios.cfg";
-comment *comment_list = NULL;
+nagios_comment *comment_list = NULL;
 service *service_list = NULL;
 timeperiod **timeperiod_ary = NULL;
 hostgroup *hostgroup_list = NULL;
@@ -32,11 +32,11 @@ int add_new_comment(int comment_type, int entry_type, char *host_name, char *ser
 {
 	return 0;
 }
-comment *get_first_comment_by_host(char *host_name)
+nagios_comment *get_first_comment_by_host(char *host_name)
 {
 	return 0;
 }
-comment *get_first_comment_by_service(char *host_name, char *service_description)
+nagios_comment *get_first_comment_by_service(char *host_name, char *service_description)
 {
 	return 0;
 }

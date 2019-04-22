@@ -28,7 +28,7 @@ time_t merlin_should_send_paths = 1;
  * member of the Nagios core team has its benefits. Mwhahahahaha
  */
 extern int xodtemplate_grab_config_info(char *main_config_file);
-extern comment *comment_list;
+extern nagios_comment *comment_list;
 
 /** code start **/
 extern hostgroup *hostgroup_list;
@@ -198,7 +198,7 @@ static int handle_external_command(merlin_node *node, void *buf)
 	return 1;
 }
 
-static int matching_comment(comment *cmnt, nebstruct_comment_data *ds)
+static int matching_comment(nagios_comment *cmnt, nebstruct_comment_data *ds)
 {
 	/*
 	 * hash collisions can cause comments from other objects
